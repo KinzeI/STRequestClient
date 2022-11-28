@@ -94,7 +94,7 @@ function App() {
     switch (currentMethod) {
       case "0":
         // GET
-        axios.post("http://92.63.101.204:3060", {
+        axios.post("exampleUrl", {
           method : "GET",
           url,
           headers,
@@ -115,7 +115,7 @@ function App() {
         break;
       case "1":
         // POST
-        axios.post("http://92.63.101.204:3060", {
+        axios.post("exampleUrl", {
           method : "POST",
           url,
           headers,
@@ -135,7 +135,7 @@ function App() {
         break;
       case "2":
         // PUT
-        axios.post("http://92.63.101.204:3060", {
+        axios.post("exampleUrl", {
           method : "PUT",
           url,
           headers,
@@ -155,7 +155,7 @@ function App() {
         break;
       case "3":
         // PATCH
-        axios.post("http://92.63.101.204:3060", {
+        axios.post("exampleUrl", {
           method : "PATCH",
           url,
           headers,
@@ -175,7 +175,7 @@ function App() {
         break;
       case "4":
         // DELETE
-        axios.post("http://92.63.101.204:3060", {
+        axios.post("exampleUrl", {
           method : "DELETE",
           url,
           headers,
