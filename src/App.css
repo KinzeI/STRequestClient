@@ -1,38 +1,64 @@
+*{
+  word-break: break-all;
+}
 .App {
-  text-align: center;
+  padding: 16px;
+  padding-top: 0;
+  padding-left: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-section {
+  width: fit-content;
+  padding: 16px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  display: flex;
+  gap: 24px;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section {
+  margin: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.params-section {
+  /* border: 1px solid black; */
+  padding-top: 0;
+  padding-left: 0;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.params-section__tabs {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tab {
+  padding: 8px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 0 0 8px 8px;
+  background: #dedede;
+  cursor: pointer;
+}
+
+.tab_active {
+  color: #ff5b2e;
+}
+
+.tab:first-child {
+  border-radius: 8px 0 8px 0;
+}
+
+.tab:hover {
+  background: #e9eaf1;
+}
+
+.params-section__main {
+  padding-left: 16px;
 }
